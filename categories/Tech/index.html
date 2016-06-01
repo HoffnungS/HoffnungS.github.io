@@ -87,7 +87,7 @@
 <meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="La Espero">
-<meta property="og:url" content="http://hoffnunghm.com/index.html">
+<meta property="og:url" content="http://hoffnunghm.com/categories/Tech/index.html">
 <meta property="og:site_name" content="La Espero">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
@@ -110,7 +110,7 @@
   };
 </script>
 
-  <title> La Espero </title>
+  <title> 分類: Tech | La Espero </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-tw">
@@ -131,9 +131,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -220,204 +218,40 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        Tech
+        <small>分類</small>
+      </h2>
+    </div>
+
     
       
 
-  
-  
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
+      <h1 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
+            <a class="post-title-link" href="/2016/06/01/用hexo搭建github博客/" itemprop="url">
               
-                
-                <a class="post-title-link" href="/2016/06/01/用hexo搭建github博客/" itemprop="url">
-                  用hexo搭建github博客
-                </a>
+                <span itemprop="name">用hexo搭建github博客</span>
               
-            
-          </h1>
+            </a>
         
+      </h1>
 
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">發表於</span>
-            <time itemprop="dateCreated" datetime="2016-06-01T21:32:42+09:00" content="2016-06-01">
-              2016-06-01
-            </time>
-          </span>
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-06-01T21:32:42+09:00"
+              content="2016-06-01" >
+          06-01
+        </time>
+      </div>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分類於</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Tech/" itemprop="url" rel="index">
-                    <span itemprop="name">Tech</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/06/01/用hexo搭建github博客/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/06/01/用hexo搭建github博客/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>#前言</p>
-<p>會折騰用hexo搭建github博客純粹是基友安利。然而本人是技術小白完全沒有程式背景，並且人品不佳，因此基本上大家遇上的很多問題都遇上了，這之後再開另一篇總結一下，裡面提到的問題五花八門且技術質量不高，也請多多指教。本次的架站原本是在windows系統下架站成功，然後事後又遇上了些問題而無法解決的更新問題，所以改搬到了Mac底下來架設，因此以下的文章是在Mac OSX系統底下陳述。</p>
-<p>#目標<br>本人的由於是沒有程式背景的技術小白，所以別期待這邊會有太艱深的技術含量發文，主要一般是自我生活的分享和隨筆搭配著折騰的技術，簡單說以分享自已的生活為主技術為輔的博客，因此技術的交流可能比較使不上力，但還是請大家多多指教。</p>
-<p>#教程和參考</p>
-<ul>
-<li><p><strong><a href="https://hexo.io/zh-tw/" target="_blank" rel="external">HEXO官方網站教程</a></strong></p>
-<p>可以補足網路個人版教程簡略的部分，或者是除錯找資源的好地方，官方主題模板好查詢的地方。</p>
-</li>
-<li><p><strong><a href="https://help.github.com/articles/about-github-wikis/" target="_blank" rel="external">GitHub Wikis</a></strong></p>
-<p>寫得很詳盡，不過是英文版本，可以當作有問題查閱的資料庫。</p>
-</li>
-<li><p><strong><a href="http://yebujimo.com/2015/03/15/Mac下搭建Hexo博客教程/" target="_blank" rel="external">教程1:DoubleDan’s blog的教程</a></strong></p>
-<p>主幹的安裝是照著這個教程步驟安裝的，但掛上自己域名的部分可以最後再看。不過寫的比較重點，所以詳細的部分可以參看下面的教程。</p>
-</li>
-<li><p><strong><a href="http://jinyanhuan.github.io/tags/github/" target="_blank" rel="external">教程2:Code_bunny的教程（有三篇）</a></strong></p>
-<p>截圖很多，解說十分詳盡，因此後面改細節的部分，大量參閱這教程。</p>
-</li>
-</ul>
-<p>#安裝上的問題</p>
-<p>##安裝Git</p>
-<p>(由於GitHub是以工具Git進行的版本控制，專門來存放內容的虛擬主機服務)</p>
-<ol>
-<li><p>照著教程1寫的安裝，如果沒有安裝過的才需要<a href="https://developer.apple.com/xcode/download/" target="_blank" rel="external">安裝MacXcode</a>，根據教程來說是為了裝Homebrew，然後執行列的終端機Terminal可以在應用程式裡找到。</p>
-</li>
-<li><p>去官網<a href="https://git-scm.com/book/zh-tw/v1/開始-安裝Git" target="_blank" rel="external">手動安裝</a> 照著上面寫的裝上。</p>
-</li>
-</ol>
-<p>##安裝Node.Js</p>
-<p>(Node.Js是通過JavaScript和一系列模組來編寫伺服器端應用。)</p>
-<p>教程1上說的先安裝nvm(Node Version Manager)主要是為了管理node的版本，而詳盡的部分可以觀看<a href="http://icarus4.logdown.com/posts/175092-nodejs-installation-guide" target="_blank" rel="external">icaru4’s blog</a>，安裝完再回到前面教程裝Node.Js。</p>
-<p>##配置SSH Keys</p>
-<p>(SSH Keys是SSH文件傳輸加密登陸的便捷方法。)</p>
-<p>照著前面教程1使用就可以在Mac底下生成SSH Key。然後要找到id_rsa.pub的位置的話，如沒看到話就在指令列找尋拷貝再貼上GitHub。</p>
-<pre><code>$ cd .ssh
-
-$ sudo vim id_rsa.pub
-</code></pre><p>(選擇read only後就會看到SSH Key，由於用Mac可以直接滑鼠複製)</p>
-<p>外插：若是用windows介面下則必須多裝上ssh-agent，整個過程可以參看<a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank" rel="external">GitHub Help裡所寫的</a></p>
-<p>##安裝Hexo</p>
-<p>照著前面的教程所說安裝但由於Hexo版本升級到3.0後第一步指令改成以下</p>
-<pre><code>$ npm install hexo-cli -g
-</code></pre><p>剩下的部分可以照著教程安裝完成。</p>
-<p>若想要確定自己的Hexo版本：在剛剛建立的文件夾底下輸入</p>
-<pre><code>$ hexo version
-</code></pre><p>可以看到回車</p>
-<pre><code>hexo: 3.2.0
-
-hexo-cli: 1.0.1
-</code></pre><p>###部署Hexo到GitHub上</p>
-<ol>
-<li><p>打開剛剛建立的文件夾底下的_config.yml在此設定，根據教程2博客(二)的設定改成自己所想要的設定。但是注意教程最底下的deploy有誤，漏寫了.git</p>
-<p> repository: <a href="https://github.com/你的名稱/你的名稱.github.io.git" target="_blank" rel="external">https://github.com/你的名稱/你的名稱.github.io.git</a></p>
-<p>在這頁文件上：後面要空一格，不然回車會出現以下結果</p>
-<p> FATAL can not read a block mapping entry; a multiline key may not be an implicit key at line 哪行, column哪列</p>
-<p>改完後再執行</p>
-<p> $ hexo d</p>
-</li>
-</ol>
-<ol>
-<li><p>正常狀況照著教程裝上插件後就可以搞定，然而偶爾也會遇到回車出現：</p>
-<p> fatal: Not a git repository(or any of the parent directories): .git</p>
-<p>代表git倉庫的遺失可以選擇.deploy_git文件夾或者是</p>
-<p> $ cd .deploy_git</p>
-<p> $ git init</p>
-<p>這也可以解決。</p>
-</li>
-</ol>
-<p>##更換主題</p>
-<p>照著教程2博客(三)來選擇拷貝主題，本人基本上是選擇官網上主題的NexT其<a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">官方的使用說明</a>寫的十分清楚。</p>
-<ul>
-<li><p>設置頭像：若是手機拍攝的照片有時候照片會轉個90度的問題，儘管照片看來是正確的，這其實是照片本身的問題，所以最後用照片後處理軟件重新另存一次就可以解決。</p>
-</li>
-<li><p>社交連結：微博照著上面所寫的話會連結不到，改以微博: <a href="http://weibo.com/u/數字帳號就可以成功連上。" target="_blank" rel="external">http://weibo.com/u/數字帳號就可以成功連上。</a> </p>
-</li>
-</ul>
-<p>##購買域名</p>
-<p>基本上是照著教程1所做的，然而DNS A紀錄的ip地址要十分注意是GitHub站的，可以用ping來查看</p>
-<pre><code>$ ping Github帳號.github.io
-</code></pre><p>所得到的ip填上，基本上這樣就可以搞定。然而有些教程會教用若是CNAME可以參看<a href="http://jianghao.wang/2015/hexo-github/" target="_blank" rel="external">此博客</a>注意CNAME沒後綴且要放在網站目錄底下才不會每次生成被刪除。</p>
-<p>#結語</p>
-<p>以上雖然很碎片，但基本上遇到的問題都記錄了。大家能夠閱讀十分感激，同時也感謝了這些教程的幫忙。請大家多多指教。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+    </header>
   </article>
 
 
@@ -425,6 +259,7 @@ hexo-cli: 1.0.1
   </section>
 
   
+
 
 
           </div>
@@ -650,7 +485,7 @@ hexo-cli: 1.0.1
 
     <script type="text/javascript">
       var disqus_shortname = 'hoffnung';
-      var disqus_identifier = 'index.html';
+      var disqus_identifier = 'categories/Tech/index.html';
       var disqus_title = "";
       var disqus_url = '';
 
